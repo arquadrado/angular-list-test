@@ -1,0 +1,13 @@
+table {
+  border: 1px solid crimson;
+  width: 777px;
+}
+
+td {
+  border: 1px solid green;
+}
+
+.expand-content {
+  height: 100%;
+  background-color: #cccccc;
+}

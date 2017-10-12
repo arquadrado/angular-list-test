@@ -1,0 +1,18 @@
+<table>
+  <tbody *ngFor="let item of items; let i = index">
+    <tr (click)="expand(i)">
+      <td>{{ item.id }}</td>
+      <td>{{ item.name }}</td>
+    </tr>
+    <tr *ngIf="shouldExpand(i)">
+      <td colspan="2">
+        <div class="expand-content" [@expanded]="toExpand.length">
+          <p>whatevs</p>
+          <p>whatevs</p>
+          <p>whatevs</p>
+          <p>whatevs</p>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
